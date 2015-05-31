@@ -161,9 +161,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StatsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505311544285_StatsModel.cs" />
+    <Compile Include="Migrations\201505311544285_StatsModel.Designer.cs">
+      <DependentUpon>201505311544285_StatsModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505311550004_statsController.cs" />
+    <Compile Include="Migrations\201505311550004_statsController.Designer.cs">
+      <DependentUpon>201505311550004_statsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505311559435_changedStats.cs" />
+    <Compile Include="Migrations\201505311559435_changedStats.Designer.cs">
+      <DependentUpon>201505311559435_changedStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -227,6 +241,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Stats\Create.cshtml" />
+    <Content Include="Views\Stats\Delete.cshtml" />
+    <Content Include="Views\Stats\Details.cshtml" />
+    <Content Include="Views\Stats\Edit.cshtml" />
+    <Content Include="Views\Stats\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,6 +256,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505311544285_StatsModel.resx">
+      <DependentUpon>201505311544285_StatsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505311550004_statsController.resx">
+      <DependentUpon>201505311550004_statsController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505311559435_changedStats.resx">
+      <DependentUpon>201505311559435_changedStats.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
