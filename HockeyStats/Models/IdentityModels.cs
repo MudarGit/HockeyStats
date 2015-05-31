@@ -29,5 +29,7 @@ namespace HockeyStats.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HockeyStats.Models.Stats> Stats { get; set; }
     }
 }
