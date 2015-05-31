@@ -12,11 +12,11 @@ namespace HockeyStats.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-        public string Name { get; set; }        
+        public string Name { get; set; }
+        
         public int GamesPlayed { get; set; }
         public int Goals { get; set; }
         public int Wins { get; set; }
         public int Losses { get; set; }
-        public int Rank { get; set; }
     }
 }
